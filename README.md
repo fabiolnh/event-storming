@@ -1,2 +1,2 @@
-# event-storming
-Event Storming
+# Event Storming (Currently Studying)
+- 
