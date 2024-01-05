@@ -45,4 +45,11 @@
 - Every command talks with an Agregator, and this aggregator is responsible for generating the event.
 
 ## Delimited Contexts
-- 
+- There are some events that are the "Key" to go to another area of the system. Ex: When a signature is approved, the client is ready to watch a video. (but watch a video is in another zone). So, this way we have to put a barrier between these areas, and it symbolizes the principal event (ex: approved signature). This is an Pivot Event. (In DDD: Bounded Contexts)
+- OBS: When we have different systems connected listening the same domain event, there is a big chance that they are different contexts
+- It is hard to define context. It needs to be discussed. In the end, it is good because you do not have to rewrite code. It can save time for everyone.
+- With it, we can think in: Attention Points, Divergency Points and Opportunity Points.
+
+ ![](https://github.com/fabiolnh/event-storming/blob/main/assets/pic2.png?raw=true)
+
+## 
