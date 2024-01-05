@@ -9,6 +9,7 @@
 * Resolve complexity business
 * People usually use "PostIt".
 * Goal: Understand and Map what happens in the System, through the events
+* With it, the understanding of the project gets much more clear (to developers, to the Domain Experts, etc). With it, everyone can communicate with the ubiquitous language (universal language)
 
 ## Cards
 
@@ -24,4 +25,24 @@
 
 - Decision made: A Green PostIt that can be putted to make a decision
 - Policy: A Purple PostIt. Something that happens through a trigger (Ex: When I create a video, send an email, so, it can be automatically or by a final user). "When I do something, does anything happen?" Use policy in this case.
+
+![](https://github.com/fabiolnh/event-storming/blob/main/assets/pic1.png?raw=true)
+
+## Chronological
+- The events need to be put in order (Can be parallel and can be through business areas)
+
+## Event Origin
+- Can be:
+  * An Action based in the Client (A command executed by the client)
+  * An External System
+  * A Scheduler (time)
+  * A Policy (a consequence of another event)
+
+## Aggregator
+- It is a set of entities and valued objects that have business rules and validation to guarantee consistency in the business. 
+- Between a Command and an Domain Event you will always have an Aggregator
+- In the Aggregator, we have the business rules.
+- Every command talks with an Agregator, and this aggregator is responsible for generating the event.
+
+## Delimited Contexts
 - 
