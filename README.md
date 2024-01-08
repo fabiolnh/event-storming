@@ -1,4 +1,4 @@
-# Event Storming (Currently Studying)
+# Event Storming
 
 * It is a workshop
 * To clarify the Domain of the Application.
