@@ -1,5 +1,6 @@
 # Event Storming (Currently Studying)
 
+* It is a workshop
 * To clarify the Domain of the Application.
 * How to model the Application
 * We are talking about big applications
@@ -39,6 +40,7 @@
   * A Policy (a consequence of another event)
 
 ## Aggregator
+- Is where we have the business rules 
 - It is a set of entities and valued objects that have business rules and validation to guarantee consistency in the business. 
 - Between a Command and an Domain Event you will always have an Aggregator
 - In the Aggregator, we have the business rules.
@@ -52,4 +54,13 @@
 
  ![](https://github.com/fabiolnh/event-storming/blob/main/assets/pic2.png?raw=true)
 
-## 
+## Arrow Voting
+- Blue arrows pointing to the HotSpot (a PostIt when there is something that is not everyone that agrees)
+- For cornel cases. When there is a conflict of ideas between the people (ex: the domain experts) that are discussing. It is a vote. Carefully, to not break the climate between the team. 
+
+## Contexts and Microservices
+- With defined contexts, you can see what are all the microservices that you need to implement. However, it depends on the size of the granularity you want. Defined contexts are the initial step to start to visualize the microservices.
+
+## Good to draw:
+- https://whimsical.com/
+- Example from Full Cycle: https://whimsical.com/event-storming-LR9ex19rzbFaq4o2yEo9DQ
